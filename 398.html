@@ -15,7 +15,6 @@
         </div>
     </center>
     <script>
-        const manifestUri = "https://linearjitp-playback.astro.com.my/dash-wv/linear/5018/default.mpd";
         async function init() {
             const video = document.getElementById('video');
             const ui = video['ui'];
@@ -23,12 +22,17 @@
             const player = controls.getPlayer();
             window.player = player;
             window.ui = ui;
+            const manifestUri = "https://linearjitp-playback.astro.com.my/dash-wv/linear/5018/default.mpd";
             player.configure({
                 drm: {
                     "clearKeys": {
                         '98817b144bcf19fd0ddca7fe54cee110': '44b423a77dd34ace162db35cbb0fb6a3'
                     }
                 }
+            });
+            player.getNetworkingEngine().registerRequestFilter(function(type, request) {
+                if (type == shaka.net.NetworkingEngine.RequestType.SEGMENT) {
+                    request.headers['Referer'] = 'https://astrogo.astro.com.my/';                }
             });
             player.addEventListener('error', onPlayerErrorEvent);
             controls.addEventListener('error', onUIErrorEvent);
