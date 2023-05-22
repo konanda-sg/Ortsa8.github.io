@@ -32,7 +32,8 @@
             });
             player.getNetworkingEngine().registerRequestFilter(function(type, request) {
                 if (type == shaka.net.NetworkingEngine.RequestType.SEGMENT) {
-                    request.headers['referer'] = 'https://astrogo.astro.com.my/';                }
+                    request.headers['Origin'] = 'https://astrogo.astro.com.my';  
+                    request.headers['Referer'] = 'https://astrogo.astro.com.my/';                }
             });
             player.addEventListener('error', onPlayerErrorEvent);
             controls.addEventListener('error', onUIErrorEvent);
