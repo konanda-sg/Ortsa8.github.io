@@ -16,7 +16,7 @@
         </div>
     </center>
     <script>
-        const manifestUri = "https://linearjitp-playback.astro.com.my/dash-wv/linear/2507/default.mpd";
+        const manifestUri = "https://linear05-playback.sooka.my/CH5/masterCH5.mpd";
         async function init() {
             const video = document.getElementById('video');
             const ui = video['ui'];
@@ -27,7 +27,7 @@
             player.configure({
                 drm: {
                     "clearKeys": {
-                        '89de71cf39be0946dec828edff84d010': '9d5e036094bb77cbaf8867d3272c66d0'
+                        "acfb4b0f1f5946bfa7c3f2e7c2d60d00": "c4dd74bdd9b465794b1fb12aab6596f8"
                     }
                 }
             });
@@ -38,7 +38,12 @@
                 console.log('The video has now been loaded!');
             } catch (error) {
                 onPlayerError(error);
-        }}
+            }
+            player.getNetworkingEngine().registerRequestFilter(function(type, request) {
+                if (type == shaka.net.NetworkingEngine.RequestType.SEGMENT) {
+                    request.headers['authorization'] = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3bXZlciI6Miwid21pZGZtdCI6ImFzY2lpIiwid21pZHR5cCI6MSwid21rZXl2ZXIiOjEsIndtaWRsZW4iOjUxMiwid21pZCI6Ik9HTXlOVEl4TW1JdFpUYzVZUzAwTUdJekxXSTFOak10WkdSaVlqSXdNMkl5WXpabSIsIndtb3BpZCI6MzIsImV4cCI6MTY5NTMyMDI2MCwiaWF0IjoxNjk0NzE2MjYwfQ.AyGr9dy3BmBSZDfZ5wgQ_fyGQjcceqc20tIbd13u7aw';                }
+            });
+        }
 
         function onPlayerErrorEvent(errorEvent) {
             onPlayerError(event.detail);
