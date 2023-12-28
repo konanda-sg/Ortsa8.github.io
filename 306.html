@@ -1,7 +1,8 @@
 <html>
 
 <head>
-    <meta name="referrer" content="no-referrer" />
+    <meta name="Referrer" content="https://sooka.my/"/>
+	<meta name="Origin" content="https://sooka.my"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/shaka-player.ui.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.3.6/controls.min.css" crossorigin="anonymous" />
 </script>
@@ -16,7 +17,7 @@
         </div>
     </center>
     <script>
-        const manifestUri = "https://d1yws6emo43ny.cloudfront.net/CH4/masterCH4.mpd";
+        const manifestUri = "https://d1yws6emo43ny.cloudfront.net/CH1/masterCH1.mpd";
         async function init() {
             const video = document.getElementById('video');
             const ui = video['ui'];
@@ -27,7 +28,7 @@
             player.configure({
                 drm: {
                     "clearKeys": {
-                        "b0e7dbe25e6c49f9b525e614fc4aa60c":"02223965e33f7bf1e6c21278063bb508"
+                        '2b1a1b7026ce4b378abd4b266aa9780f':'121f270c5ea6b690bedd7e4a57f2f0c6'
                     }
                 }
             });
