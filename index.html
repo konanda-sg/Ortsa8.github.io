@@ -1,357 +1,386 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>ortsa1</title>
+<body>
+<link rel="icon" type="image/x-icon" href="#">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {box-sizing: border-box;}
+
 body {
- background:   #0000b3;
- margin: 0;
- padding: 10px;
- font-family: 'Public Sans', sans-serif; 
-}
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 2000px;
-  position: relative;
-  margin: auto;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 5px 5px;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #ff33ff;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+.header a {
+  float: left;
+  color: black;
   text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.header a.logo {
+  font-size: 20px;
+  font-weight: bold;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.header a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-</head>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  
-
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-</body>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>EjalTV</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-
-  <script src="main.js"></script>
-</head>
-<body>
-  <div class="wrapper">
-
-    <!-- HEADER -->
-    <header>
-      <div class="netflixLogo">
-        <a id="logo" href="https://hpmurah2u.github.io/ejaltv.github.io/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/logo%20ejal%20tv%20baru%20149x70.png?raw=true" alt="Logo Image"></a>
-      
-     </div>      
-     <marquee style='font-family:arial; font-size:26px; color: #ffff00;'>Sub page untuk all live tv ni saya akan susun kemudian..sekarang ni bersepah lagi.. harap maklum</marquee>
-    </header>
-    <!-- END OF HEADER -->
-    
-    <!-- MAIN CONTAINER -->
-    <section class="main-container" >
-      <div class="location" id="home">
-          <h1 id="home">Channel Sport</h1>
-          <div class="box">
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-assp/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/ASSP%20290x157.png?raw=true" alt="assp"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-assp-iphone/"><img src="https://telegra.ph/file/bc1b672e48872ae3d4072.png?raw=true" alt="astroliveevent1"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-assp2/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/assp2%20290x157.png?raw=true" alt="assp2"></a>
-            <a href="https://hpmurah2u.github.io/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/assp3%20290x157.png?raw=true" alt="assp3"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-assp4/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/assp4%20290X157.png?raw=true" alt="ass4"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-assp5/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/assp5%20290x157.png?raw=true" alt="assp5"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-arena/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/arena%20290x157.png?raw=true" alt="arena"></a>
-    
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-arena2/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/ARENA%202%20290x157.png?raw=true" alt="arena2"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-arenabola/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/arena%20bola%20290x157.png?raw=true" alt="arenabola"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-arenabola2/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/arenabola2%20290x157.png?raw=true" alt="arenabola2"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-arenabola3/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/arenabola3%20290x157.png?raw=true" alt="arenabola3"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-arenabola4/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/arenabola4%20290x157.png?raw=true" alt="arenabola4"></a>
-            <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-wwe/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/WWE%20290x157.png?raw=true" alt="wwe"></a>        
-          </div>
-      </div>
-      
-
-      <h1 id="myList">Channel Bahasa Melayu</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tv1/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/tv1%20290x157.png?raw=true" alt="tv1"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tv2/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/tv2%20290x157.png?raw=true" alt="tv2"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tv3/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/TV3%20290x157.png?raw=true" alt="tv3"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tv9/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/TV9%20290x157.png?raw=true" alt="tv9"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-hijrah/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Al-Hijrah%20290x157.png?raw=true" alt="alhijrah"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-awesome/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/awesome%20290x157.png?raw=true" alt="awesometv"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-prima/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/prima%20290x157.png?raw=true" alt="prima"></a> 
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-oasis/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/oasis%20290x157.png?raw=true" alt="oasis"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-ria/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Astro_Ria%20290x157.png?raw=true" alt="ria"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-citra/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Astro_Citra%20290x157.png?raw=true" alt="citra"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-warna/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Astro_Warna%20290x157.png?raw=true" alt="warna"></a>
-     </div>
-      
-      <h1 id="tvShows">Channel Movies</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-hbo/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/hbo%20290x157.png?raw=true" alt="hbo"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-boo/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/boo%20290x157.png?raw=true" alt="boo"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-hbofamily/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/HBO_Family%20290x157.png?raw=true" alt="hbofamily"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-hbohits/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/HBOHits%20290x157.png?raw=true" alt="hbohits"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-cinemax/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/cinemax%20290X157.png?raw=true" alt="cinemax"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-hitsmovie/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/hits%20movie%20290x157.png?raw=true" alt="hitsmovie"></a>
-
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-showcase/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/ShowcaseMovies%20290x157.png?raw=true" alt="showcase"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>              
-      </div>
-      
-
-      <h1 id="movies">Channel Kids</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-ceria/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/ceria%20290x157.png?raw=true" alt="ceria"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-cartoonnetwork/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Cartoon_Network%20290x157.png?raw=true" alt="cartoonnetwork"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-nick/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Nickelodeon%20290x157.png?raw=true" alt="nick"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-moonbug/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/MoonbugKids%20290x157.png?raw=true" alt="moonbug"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-dreamworks/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/DreamWork%20290x157.png?raw=true" alt="dreamworks"></a>                
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-nickjr/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Nick_Jr.%20290x157.png?raw=true" alt="nickjr"></a>
-     </div>
-
-      <h1 id="originals">Channel Chinese</h1>
-      <div class="box">
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                
-      </div>
-      
-      <h1 id="originals">Channel Indian</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-bollyone/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/BollyOne%20%20290x157.png?raw=true" alt="bollyone"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                
-      </div>
-      
-      <h1 id="originals">Channel News</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-awani/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Astro_Awani%20290x157.png?raw=true" alt="awani"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                
-      </div>
-      
-      <h1 id="originals">Channel Education</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-animal/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/animal%20planet%20290x157.jpg?raw=true" alt="animalplanet"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tutortvsk/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/tutor%20tv%20sk%20290x157.png?raw=true" alt="tutortvsk"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tutortvsmk/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/tutor%20tv%20smk%20290x157.png?raw=true" alt="tutortvsmk"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-discovery/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/discovery%20channel%20290x157.png?raw=true" alt="discovery"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                
-      </div>
-      
-      <h1 id="originals">Channel Entertainment</h1>
-      <div class="box">
-         <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-axn/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/axn%20290x157.png?raw=true" alt="axn"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                
-      </div>
-      
-      <h1 id="originals">Channel Korean</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-kbsworld/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/kbs%20world%20290x157.png?raw=true" alt="kbsworld"></a>
-         <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tvn/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/tvn%20290x157.png?raw=true" alt="tvn"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-one/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/one%20290x157.png?raw=true" alt="one"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-tvnmovies/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/tvn%20movies%20290x157.jpg?raw=true" alt="tvnmovies"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-kplus/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/K_Plus%20290x157.jpg?raw=true" alt="kplus"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                
-      </div>
-      
-      <h1 id="originals">Channel Lifestyle</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-hgtv/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/hgtv%20290x157.png?raw=true" alt="hgtv"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-     </div>
-      
-      <h1 id="originals">Channel Documentaries</h1>
-      <div class="box">
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>             
-      </div>
-      
-      <h1 id="originals">Channel Singapore</h1>
-      <div class="box">
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                  
-      </div>
-      
-      <h1 id="originals">Channel Unifi TV</h1>
-      <div class="box">
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-sensasi/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Unifi_Sensasi%20290x157.png?raw=true" alt="hyppsensasi"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-inspirasi/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Unifi_Inspirasi%20290x157.png?raw=true" alt="inspirasi"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-duniasinema/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/dunia%20sinema%20290x157.png?raw=true" alt="duniasinema"></a>
-        <a href="https://hpmurah2u.github.io/hpmurah2u.github.io-degup/"><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/Degup%20290x157.png?raw=true" alt="degup"></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>
-        <a href=""><img src="https://raw.githubusercontent.com/hpmurah2u/pejal/PEJAL/coming%20soon%20ejaltv%20pic.png?raw=true" alt=""></a>                 
-      </div>
-     
-    <!-- END OF MAIN CONTAINER -->
-
-   
-    <!-- FOOTER -->
-    <footer>
-      <p><font size="4" color="#ffffff">&copy 2023 EjalTV</font></p>
-    
-    </footer>
-  </div>
-   <script src="https://dunggramer.github.io/disable-devtool/disable-devtool.min.js" defer></script>
-   
-   <!DOCTYPE html>
-<html>
-<head>
-<style>
-body 
-
-h1 {
+.header a.active {
+  background-color: dodgerblue;
   color: white;
-  font-size: 27px;
 }
 
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+.href {
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
-</head>
+
+<style>
+th, td {
+  border-style:solid;
+  border-color: #96D4D4;
+}
+</style>
+<center>
+<iframe src="https://free.timeanddate.com/clock/i8iioj45/n122/fn2/tct/pct/ahr/avt/tt0/tm2/th2/ta1" frameborder="0" width="336" height="21" allowtransparency="true"></iframe>
+</center>
 <body>
-</body>
-</html>
+<br>
+<br>
+<br>
+<br>
+
+
+<center><h2>Chinese</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/300.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/355_144.png" alt="TV1"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/305.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/425_144.png" alt="TV6" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/306.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/182_144.png" alt="TVOKEY"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/308.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/158_144.png" alt="TV Alhijrah" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/309.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/134_144.png" alt="Suria" width="100"></a>
+    <th><a href="https://ortsa8.rf.gd/ch/310.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/203_144.png" alt="Channel 5" width="100"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/311.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/172_144.png" alt="Channel 8" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/316.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/424_144.png" alt="Channel U" width="100"></a>
+    <th><a href="https://ortsa8.rf.gd/ch/317.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/427_144.png" alt="oktolidays" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/319.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/383_144.png" alt="Suria" width="100"></a>
+    <th><a href="https://ortsa8.rf.gd/ch/320.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/384_144.png" alt="Channel 5" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/321.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/187_144.png" alt="TV1"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/325.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/382_144.png" alt="TV2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/326.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/43_144.png" alt="TV3"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/333.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/162_144.png" alt="TV6" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/335.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/385_144.png" alt="TVOKEY"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/352.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/87_144.png" alt="TVIKIM" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/354.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/65_144.png" alt="TV Alhijrah" width="100"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Korean</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/392.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/161_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/393.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/133_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/395.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/190_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/396.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/266_144.png" alt="tvN" width="150"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Japanese</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/398.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/428_144.png" alt="KBS World"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Movies</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/401.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/391_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/404.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/251_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/411.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/143_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/412.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/337_144.png" alt="tvN" width="150"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/413.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/454_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/414.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/450_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/415.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/449_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/416.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/274_144.png" alt="tvN" width="150"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>News</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/501.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/436_144.png" alt="AWANI" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/502.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/160_144.png" alt="BERITARTM" width="180" height="103"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/503.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/426_144.png" alt="CNA" width="150"></a></th>
+    </tr>
+ </table></center>
+ <center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/511.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/336_144.png" alt="AWANI" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/512.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/366_144.png" alt="BERITARTM" width="180" height="103"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/513.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/374_144.png" alt="CNA" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/514.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/155_144.png" alt="PARLIMEN RAKYAT" width="200"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/515.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/295_144.png" alt="PARLIMENRAKYAT" width="200"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/516.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/423_144.png" alt="AWANI" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/517.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/422_144.png" alt="BERITARTM" width="180" height="103"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/518.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/461_144.png" alt="CNA" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/519.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/287_144.png" alt="PARLIMEN RAKYAT" width="200"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/520.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/289_144.png" alt="PARLIMENRAKYAT" width="200"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Documentaries</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/550.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/483_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/551.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/482_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/552.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/376_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/553.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/136_144.png" alt="tvN" width="150"></a></th>
+    </tr>
+</table></center>
+ <center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/554.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/452_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/555.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/144_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/556.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/377_144.png" alt="KBS World"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Kids</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/603.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/411_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/611.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/386_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/612.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/485_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/615.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/371_144.png" alt="tvN" width="150"></a></th>
+    </tr>
+ </table></center>
+ <center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/616.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/370_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/617.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/392_144.png" alt="tvN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/618.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/465_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/620.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/481_144.png" alt="tvN" width="150"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Variety</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/701.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/131_144.png" alt="TV1"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/703.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/447_144.png" alt="TV2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/601.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/453_144.png" alt="KBS World"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/706.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/179_144.png" alt="TV6" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/707.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/338_144.png" alt="TVOKEY"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/708.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/153_144.png" alt="TVIKIM" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/709.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/91_144.png" alt="TV Alhijrah" width="100"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/712.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/270_144.png" alt="Suria" width="100"></a>
+    <th><a href="https://ortsa8.rf.gd/ch/713.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/448_144.png" alt="Channel 5" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/714.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/369_144.png" alt="Channel 8" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/715.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/198_144.png" alt="Channel U" width="100"></a>
+    <th><a href="https://ortsa8.rf.gd/ch/716.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/367_144.png" alt="oktolidays" width="100"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/717.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/451_144.png" alt="Suria" width="100"></a>
+    <th><a href="https://ortsa8.rf.gd/ch/718.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/420_144.png" alt="Channel 5" width="100"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>S Sports</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/801s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/235_144.png" alt="Arena"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/802s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/457_144.png" alt="Arena2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/803s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/486_144.png" alt="Arena"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/804s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/487_144.png" alt="Arena2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/820s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/339_144.png" alt="EuroSport"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/816s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/456_144.png" alt="SPOTV"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/810s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/474_144.png" alt="SPOTV2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/818s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/236_144.png" alt="beIN Sports1"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/817s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/466_144.png" alt="beIN Sports2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/819s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/313_144.png" alt="beIN Sports3"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/811s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/154_144.png" alt="SuperSport"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/812s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/138_144.png" alt="SuperSport2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/813s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/164_144.png" alt="SuperSport3"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/814s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/241_144.png" alt="SuperSport4"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/815s.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/503_144.png" alt="W-Sport"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Sports</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/816.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/456_144.png" alt="SPOTV"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/810.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/474_144.png" alt="SPOTV2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/818.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/236_144.png" alt="beIN Sports1"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/817.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/466_144.png" alt="beIN Sports2"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/819.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/313_144.png" alt="beIN Sports3"></a></th>
+    </tr>
+</table></center>
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/814.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/241_144.png" alt="SuperSport4"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/815.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/503_144.png" alt="W-Sport"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/820.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/339_144.png" alt="EuroSport"></a></th>
+    </tr>
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/821.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/194_144.png" alt="TVSUKAN" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/822.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/189_144.png" alt="Unifi Sports 1" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/823.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/393_144.png" alt="Unifi Sports 2" width="150"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/824.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/197_144.png" alt="Egg"></a></th>
+    </tr>
+</table></center>
+
+
+<center><h2>Live Event</h2></center>
+
+
+<center><table style="width:100%">
+    <tr>
+    <th><a href="https://ortsa8.rf.gd/ch/795.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/154_144.png" alt="SuperSport"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/796.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/154_144.png" alt="SuperSport"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/797.html"><img src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/154_144.png" alt="SuperSport"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/809.html"><img src="https://linear-poster.astro.com.my/prod/logo/BEIN4.png" alt="beIN Sports4"></a></th>
+    <th><a href="https://ortsa8.rf.gd/ch/809s.html"><img src="https://linear-poster.astro.com.my/prod/logo/BEIN4.png" alt="beIN Sports4"></a></th>
+    </tr>
+</table></center>
+
+<br>
+<br>
+<br>
+<footer>
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=8643998&style=0006&nbdigits=5&type=page&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
+<p>&copy; 2023 All Copyright Reserved</p>
+</footer>
 
 </body>
 </html>
